@@ -7,7 +7,7 @@ var connectHandler = function connected(){
     console.log('连接成功。');
     //出发data_received事件
     eventEmitter.emit('data_received');
-}
+};
 //绑定connection事件处理程序
 eventEmitter.on('connection',connectHandler);
 //使用匿名函数绑定data_received事件
